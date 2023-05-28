@@ -6,6 +6,8 @@
     --background-color: #404BBF;
     --adress-color: #434455;
     --btn-color: #e7e9fc;
+    --customers-color: #8E8F99;
+    --footer-icon: #31D0AA;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -129,6 +131,10 @@ img {
     min-height: 600px;
     background: var(--title-color);
     padding-top: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .hero-text {
     max-width: 496px;
@@ -163,7 +169,7 @@ img {
 
 /* Criteria */
 .criteria {
-    padding: 120px 0
+    padding: 120px 0;
 }
 .criteria-list {
     display: flex;
@@ -172,6 +178,8 @@ img {
 }
 .criteria-item {
     width: calc((100% - 72px) / 4);
+    height: 112px;
+    background: var(--text-color);
 }
 .criteria-text-top {
     font-weight: 500;
@@ -232,6 +240,8 @@ img {
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     background: var(--white-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 .ourteam-text {
     margin-bottom: 8px;
@@ -247,12 +257,77 @@ img {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+.ourteam-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.ourteam-soc-item {
+    width: 40px;
+    height: 40px;
+}
+.ourteam-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--logo-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ourteam-soc-icon {
+    width: 16px;
+    height: 16px;
+}
+/* Customers */
+.customers {
+    padding: 120px 156px;
+}
+.customers-text {
+    margin-bottom: 72px;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-color);
+}
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+.customers-item {
+    width: calc((100%-168px) / 6);
+    height: 88px;
+}
+.customers-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--customers-color);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customers-link:hover, .customers-link:focus {
+    border-color: var(--background-color);
+}
+.customers-icon {
+    width: 104px;
+    height: 56px;
+    fill: var(--customers-color);
+}
+.customers-link:focus .customers-icon, .customers-link:hover .customers-icon {
+    fill: var(--background-color);
 }
 /* Footer */
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
     background: var(--title-color);
+    display: flex;
 }
 .footer-logo {
     display: inline-block;
@@ -281,6 +356,38 @@ img {
     color: var(--text-color);
     max-width: 264px;
 }
+.footer-text-bottom {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    margin-bottom: 16px;
+}
+.footer-soc-list {
+    display: flex;
+    gap: 24px;
+}
+.footer-soc-item {
+    width: 40px;
+    height: 40px;
+}
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--logo-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-soc-link:hover, .footer-soc-link:focus {
+    background-color: var(--footer-icon);
+}
+.footer-soc-icon {
+    width: 24px;
+    height: 24px;
+}
 /* Fitters */
 .fitters {
     padding-top: 96px;
@@ -292,8 +399,10 @@ img {
     gap: 24px;
     margin-bottom: 72px;
 }
+.fitters-button-item:hover, .fitters-button-item:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .fitters-button {
-    font-family: "Roboto", sans-serif;
     background-color: var(--text-color);
     font-weight: 500;
     font-size: 16px;
@@ -320,6 +429,9 @@ img {
 }
 .fitters-item {
     width: calc((100% - 48px) / 3);
+}
+.fitters-item:focus, .fitters-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .app {
     padding: 32px 16px;
